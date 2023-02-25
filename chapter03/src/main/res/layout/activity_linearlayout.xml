@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/purple_500"
+        android:layout_margin="20dp"
+        android:padding="60dp">
+        <!--layout_margin规定了当前视图与周围平级视图间的距离 -->
+        <!--padding规定了当前视图与内部下级视图之间的距离 -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="横排111"
+            android:textColor="#00FF00"
+            android:textSize="17sp" />
+        <!--layout_weight规定当前视图所占的权重 -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="横排222"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="竖排111"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="竖排222"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#ffff99"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom"
+            android:background="#ff0000"
+            android:padding="10dp"
+            android:gravity="right">
+            <!-- layout_gravity规定当前视图在上级视图的位置 -->
+            <!-- gravity规定下级视图在当前视图的位置 -->
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#00ff11"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="#0000ff">
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#00ff11"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

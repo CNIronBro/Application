@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 范围内可以进行水平滚动 -->
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="#aaaaff" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="#ffaaaa" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- 范围内可以进行垂直滚动 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#00ffff" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#ffaaaa" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
